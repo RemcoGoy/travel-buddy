@@ -1,7 +1,22 @@
 [project]
-name = "server"
-version = "0.1.0"
-description = "Add your description here"
+name = "travel-buddy-server"
+version = "0.0.1"
+description = "The server of the travel-buddy project"
+authors = [{ name = "Remco Goyvaerts", email = "remco.goy@hotmail.com" }]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = ["google-adk>=1.7.0"]
+
+[dependency-groups]
+dev = ["ruff>=0.12.4"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "T201",    # Print statements
+    "DTZ005",  # Use of datetime without a timezone
+    "E501",    # Line too long
+    "PLC0414", # Useless import alias
+    "D213",    # Multiline summary second line
+    "D203",    # Incorrect blank line before class
+]
