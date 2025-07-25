@@ -12,7 +12,7 @@ from google.adk.sessions.state import State
 from travel_assistant.shared import consts
 
 SAMPLE_SCENARIO_PATH = os.getenv(
-    "TRAVEL_CONCIERGE_SCENARIO", "travel_assistant/profiles/itinerary_empty_default.json",
+    "TRAVEL_ASSISTANT_SCENARIO", "travel_assistant/profiles/itinerary_empty_default.json",
 )
 
 def _set_initial_states(source: dict[str, Any], target: State | dict[str, Any]) -> None:
