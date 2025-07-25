@@ -19,4 +19,5 @@ ignore = [
     "PLC0414", # Useless import alias
     "D213",    # Multiline summary second line
     "D203",    # Incorrect blank line before class
+    "TRY300",  # Try Consider Else
 ]
